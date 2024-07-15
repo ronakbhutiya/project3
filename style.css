@@ -556,6 +556,16 @@ html {
   background-color: #000;
   padding: 0.3rem;
 }
+.close {
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-xmark {
+  cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
 @media (max-width: 81.25em) {
   html {
     font-size: 58%;
@@ -567,11 +577,15 @@ html {
     position: absolute;
     opacity: 0;
     height: 100vh;
-    transform: translateX(-100%);
+    transform: translateX(-120%);
     transition: all 0.3s ease-in-out;
     background-color: #f2ebe1;
     z-index: 99999;
     margin-left: 6rem;
+  }
+  .view {
+    opacity: 1;
+    transform: translateX(0);
   }
   .member {
     grid-column: 1/-1;
