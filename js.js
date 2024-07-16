@@ -10,3 +10,8 @@ linkIcons.forEach((icon) => {
 closeBtn.addEventListener("click", () => {
   navView.classList.remove("view");
 });
+function activeLink() {
+  linkIcons.forEach((item) => item.classList.remove("active-link"));
+  this.classList.add("active-link");
+}
+linkIcons.forEach((item) => item.addEventListener("click", activeLink));
